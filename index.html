@@ -10,7 +10,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <style type="text/css">
-    
+.bodywrapper{
+width:100%;
+overflow:hidden;
+}
+
     .custom-navbar .fa {font-size:25px}
 
 @media (max-width:767px) {
@@ -45,6 +49,11 @@
 margin-top:100px;
     }
 
+.imgboxes4{
+position:relative;
+top:-30px;
+}
+
 body{
 background-image: url("http://aroundtheplate.org/wp-content/uploads/2012/05/potatoes1.jpg")
 }
@@ -55,6 +64,14 @@ font-size:45px;
 color:white;
 position:relative;
 text-align:center;
+}
+
+.mascotpotato{
+position:relative;
+float:right;
+height:150px;
+width:200px;
+top:-30px;
 }
 
 .ourdisplay {
@@ -74,16 +91,41 @@ width:50%;
     }
 }
 
+@media (max-width:400px) {
+.imgboxes {
+width:100%;
+  }
+}
+
+@media (max-width:359px) {
+.mascotpotato{
+width:100%;
+  }
+}
+
+.sales{
+font-size:40px;
+text-align:center;
+font-family: 'Oswald', Latino, sans-serif;
+color:white;
+position:relative;
+top:10px;
+}
+
 .graph{
 position:relative;
 margin-left: auto;
 margin-right: auto;
 top:40px;
+width:1000px;
+height:500px;
 }
 
 </style>
 </head>
 <body>
+
+<div id="bodywrapper"></div>
 
 <!---NAV BAR--->
 <nav class="navbar navbar-inverse navbar-static-top custom-navbar" role="navigation">
@@ -119,17 +161,20 @@ top:40px;
   </div>
 </nav>
 
+<img class="mascotpotato img-responsive" src="http://i64.tinypic.com/2urxao4.jpg"/>
+
 <h1 class="mashtitle">Tanners Mashed Cashed Potato Emporium</h1>
 
 	    <h3 class="ourdisplay">Our Products</h3>
+          <ul class="img-list">
             <div class="container">
             <div class="row">
             <div class="displayboxes  col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes" src="http://i67.tinypic.com/28nr84.jpg"/></div>
             <div class="displayboxes  col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes" src="http://i67.tinypic.com/28nr84.jpg"/></div>
             <div class="clearfix visible-sm-block"></div>
-            <div class="displayboxes col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes" src="http://i67.tinypic.com/28nr84.jpg"/></div>
-            <div class="clearfix visible-md-block"></div>
             <div class="displayboxes  col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes" src="http://i67.tinypic.com/28nr84.jpg"/></div>
+            <div class="clearfix visible-md-block"></div>
+            <div class="displayboxes  col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes imgboxes4" src="http://i67.tinypic.com/28nr84.jpg"/></div>
             <div class="clearfix visible-sm-block"></div>
             <div class="clearfix visible-lg-block"></div>
             <div class="displayboxes  col-sm-6 col-md-4 col-lg-3"><img class="img-responsive imgboxes" src="http://i65.tinypic.com/whk40h.jpg"/></div>
@@ -155,7 +200,8 @@ top:40px;
               </div>
           </div>
 
-<img class="img-responsive graph" src="http://i63.tinypic.com/14wdxc.jpg"/>
+<h1 class="sales">Our Sales</h1>
+<img class="img-responsive graph" src="http://i66.tinypic.com/2rr9kdv.png"/>
 
 </body>
 </html>
